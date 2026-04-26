@@ -1,6 +1,3 @@
-<?php
-// index.php - DELL Landing Page
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,36 +27,48 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Feb 22 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="index-page">
+<main>
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <body class="index-page">
+        <header id="header" class="header d-flex align-items-center fixed-top">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-            <a href="index.php" class="logo d-flex align-items-center me-auto">
-                <h1 class="sitename">Arsha</h1>
-            </a>
+                <a href="index.html" class="logo d-flex align-items-center me-auto">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.webp" alt=""> -->
+                    <h1 class="sitename">Arsha</h1>
+                </a>
 
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="#hero" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
 
-            <a class="btn-getstarted" href="#about">Get Started</a>
 
-        </div>
-    </header>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
 
-    <main>
+                <a class="btn-getstarted" href="#about">Get Started</a>
 
+            </div>
+
+        </header>
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
+
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
@@ -68,9 +77,7 @@
                         <div class="d-flex">
                             <a href="https://l.instagram.com/?u=https%3A%2F%2Fvisitstore.bio%2Fdell%3Ftab%3Dig%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDFw7gVu1rn7f4pSQsVPGKy4LOybdzWm6rIcwIxf_d9Xd_EFqFu8LpuIzOuM_aem_-wUsR5IDvRnITQ9aQyOT8A&e=AT5MEtrBkGsHHuBSojJsv0w46XfIODWyqhFo7B0j5Uua3zj4U9LVWOJbuWNA1GkLBgHFBFOivWXThzl05XSxdiYxHtDbQ_xN_ckgn4eOmA"
                                 class="btn-get-started">Visit Store</a>
-                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center">
-                                <i class="bi bi-play-circle"></i><span>Watch Video</span>
-                            </a>
+                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -78,6 +85,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- /Hero Section -->
 
@@ -91,11 +99,12 @@
             <!-- End Section Title -->
 
             <div class="container">
+
                 <div class="row gy-4">
 
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                         <p>
-                            "The XPS 14 is back and better than ever." - @zdnet_official
+                            “The XPS 14 is back and better than ever.” - @zdnet_official
                         </p>
                         <ul>
                             <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
@@ -105,39 +114,41 @@
                     </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/Untitled.png" sizes="10px" alt="Product Image">
+                        <img src="D:\semester 4\pweb\FE5026241085\Iqbalthehustler.github.io\Untitled.png" sizes="10px">
                         <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                     </div>
 
                 </div>
+
             </div>
 
         </section>
         <!-- /About Section -->
 
-    </main>
+</main>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<!-- Preloader -->
+<div id="preloader"></div>
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
 
 </body>
+
 
 </html>
