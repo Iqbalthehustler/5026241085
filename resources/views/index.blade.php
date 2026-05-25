@@ -1,31 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Menghubungkan dengan view template master -->
+@extends('template')
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - papy gaming</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-</head>
+@section('title', 'Data Pegawai')
 
-<body>
-    <div class="container">
-        <div class="center">
-            <center>
-                <h1>Muhammad Iqbal burhanuddin</h1>
-                <h1>NRP : 5026241085</h1>
-                <a href="pertemuan 5.html"><button>pertemuan 5</button></a><br>
-                <a href="linktree.html"><button>tugas linktree</button></a><br>
-                <a href=""><button>tugas make over</button></a><br>
-                <a href=""><button>uts</button></a><br>
-            </center>
-        </div>
-    </div>
+<!-- isi bagian konten -->
+<!-- cara penulisan isi section yang panjang -->
+@section('konten')
+<center>
 
 
+	<br/>
+	<br/>
 
+    	<p>Cari Data Pegawai :</p>
+	<form action="/pegawaicari" method="GET">
+		<input type="text" name="cari" placeholder="Cari Pegawai .." class="form-control">
+		<input type="submit" value="CARI" class="btn btn-secondary">
+	</form>
 
-</body>
+	<br/>
 
-</html>
+	<table class="table table-striped table-hover">
+		<tr>
+			<th>Nama</th>
+			<th>Jabatan</th>
+			<th>Umur</th>
+			<th>Alamat</th>
+			<th>Opsi</th>
+		</tr>
+		@foreach($pegawai as $p)
+		<tr>
+			<td>{{ $p->pegawai_nama }}</td>
+			<td>{{ $p->pegawai_jabatan }}</td>
+			<td>{{ $p->pegawai_umur }}</td>
+			<td>{{ $p->pegawai_alamat }}</td>
+			<td>
+				<a href="/pegawaiedit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
+
+				<a href="/pegawaihapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>
+			</td>
+		</tr>
+		@endforeach
+	</table>
+    <ul class="pagination" style="margin: 20px 0">
+        {{ $pegawai->links () }}
+
+    <a href="/pegawaitambah" class="btn btn-primary">Tambah Pegawai Baru</a>
+</center>
+
+@endsection
