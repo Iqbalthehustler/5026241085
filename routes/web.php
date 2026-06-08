@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\KeranjangBelanjaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -84,8 +85,14 @@ Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 // ✅ Route spesifik pegawai dulu, baru yang pakai parameter
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
 Route::get('/pegawaitambah', [PegawaiDBController::class, 'tambah']);
-Route::get('/pegawaiedit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawaistore', [PegawaiDBController::class, 'store']);
+Route::get('/pegawaiedit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawaiupdate', [PegawaiDBController::class, 'update']);
 Route::get('/pegawaihapus/{id}', [PegawaiDBController::class, 'hapus']);
-Route::get('/pegawai{nama}', [PegawaiController::class, 'index']);
+Route::get('/pegawaicari', [PegawaiDBController::class, 'cari']);
+
+//latian uas
+Route::get('/keranjang', [KeranjangBelanjaController::class, 'endix']);
+Route::get('/keranjang/add', [KeranjangBelanjaController::class, 'add']);
+Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
+Route::get('/keranjang/delete/{id}', [KeranjangBelanjaController::class, 'delete']);
