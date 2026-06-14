@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>5026211151 - Aryatama Attariq H Putra</title>
+    <title>Faiz Furqon Explorer - 5026241117</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -51,10 +51,11 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="/pegawai">Pegawai</a></li>
-                    <li><a href="">Kaos</a></li>
+                    <li><a href="">PR 1</a></li>
                     <li><a href="">PR 2</a></li>
                     <li><a href="">Pertemuan 15</a></li>
                     <li><a href="">EAS</a></li>
+
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -62,15 +63,15 @@
     </header>
 
     <main class="main">
+        <!--bagian kontem CRUD-->
 
-        <!-- bagian konten CRUD -->
         @yield('konten')
 
     </main>
-
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -87,8 +88,68 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+</body>
 
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>5026241085 Muhammad Iqbal Burhanuddin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h3>5026241085 Muhammad Iqbal Burhanuddin</h3>
+            <h6>@yield('title')</h6>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pegawai">Pegawai</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/siswa">Siswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nilaikuliah">Nilai kuliah (latihan EAS pr)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/keranjang">Keranjang (latihan EAS lk)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/minuman">minuman (tugas pra eas)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/perpustakaan">Perpustakaan-soal tahun lalu-</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">latian eas pribadi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EAS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            @yield('konten')
+        </div>
+    </div>
 
 </body>
 
 </html>
+
+
+

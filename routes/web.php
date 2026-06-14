@@ -82,6 +82,21 @@ Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
+//siswa
+use App\Http\Controllers\SiswaController;
+
+Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa.index');
+
+Route::get('/siswa/create', [SiswaController::class, 'create'])->name('siswa.create');
+
+Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
+
+Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
+
+Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
+
+Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
 // ✅ Route spesifik pegawai dulu, baru yang pakai parameter
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
 Route::get('/pegawaitambah', [PegawaiDBController::class, 'tambah']);
@@ -96,3 +111,31 @@ Route::get('/keranjang', [KeranjangBelanjaController::class, 'endix']);
 Route::get('/keranjang/add', [KeranjangBelanjaController::class, 'add']);
 Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
 Route::get('/keranjang/delete/{id}', [KeranjangBelanjaController::class, 'delete']);
+
+
+
+use App\Http\Controllers\nilaikuliahcontroller;
+
+Route::get('/nilaikuliah', [nilaikuliahcontroller::class, 'index']);
+Route::get('/nilaikuliah/create', [nilaikuliahcontroller::class, 'create']);
+Route::post('/nilaikuliah/store', [nilaikuliahcontroller::class, 'store']);
+
+Route::get('/nilaikuliah/{id}/edit', [nilaikuliahcontroller::class, 'edit']);
+Route::post('/nilaikuliah/{id}/update', [nilaikuliahcontroller::class, 'update']);
+
+Route::get('/nilaikuliah/{id}/hapus', [nilaikuliahcontroller::class, 'destroy']);
+
+// minuman
+use App\Http\Controllers\MinumanController;
+
+Route::get('/minuman', [MinumanController::class, 'index']);
+
+Route::get('/minuman/create', [MinumanController::class, 'create']);
+
+Route::post('/minuman/store', [MinumanController::class, 'store']);
+
+Route::get('/minuman/edit/{id}', [MinumanController::class, 'edit']);
+
+Route::post('/minuman/update/{id}', [MinumanController::class, 'update']);
+
+Route::get('/minuman/hapus/{id}', [MinumanController::class, 'delete']);

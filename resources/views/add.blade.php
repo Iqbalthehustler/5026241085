@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <h2>Tambah Data Pembelian</h2>
 
 <form action="/keranjang/store" method="post">
@@ -12,5 +13,10 @@
     Harga
     <input type="text" name="harga"><br><br>
 
-    <input type="submit" value="Simpan">
+    <button type="submit" class="btn btn-success">
+    Simpan
+</button>
+<a href="/keranjang" class="btn btn-secondary">
+    Kembali
+</a>
 </form>

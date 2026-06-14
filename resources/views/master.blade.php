@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+@extends('template')
+
+@section('konten')
+
 <head>
     <title> @yield('title')</title>
     <meta charset="utf-8">
@@ -30,6 +34,8 @@
                     <a class="nav-link" href="/blog/kontak">KONTAK</a>
                 </li>
             </ul>
+
+
 
         </nav>
         <hr />
