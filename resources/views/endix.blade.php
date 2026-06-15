@@ -24,7 +24,7 @@
         <td>{{ number_format($k->harga,0,',','.') }}</td>
         <td>{{ number_format($k->jumlah * $k->harga,0,',','.') }}</td>
         <td>
-            <a href="/keranjang/hapus/{{ $k->id }}"
+            <a href="/keranjang/delete/{{ $k->id }}"
                class="btn btn-danger">
                Batal
             </a>

@@ -115,6 +115,9 @@
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link active" href="/home">home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                      <li class="nav-item">
@@ -130,13 +133,13 @@
                         <a class="nav-link" href="/minuman">minuman (tugas pra eas)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/perpustakaan">Perpustakaan-soal tahun lalu-</a>
+                        <a class="nav-link" href="/buku">Perpustakaan-soal tahun lalu-</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">latian eas pribadi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EAS</a>
+                        <a class="nav-link" href="/eas">EAS</a>
                     </li>
 
                 </ul>

@@ -113,7 +113,7 @@ Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
 Route::get('/keranjang/delete/{id}', [KeranjangBelanjaController::class, 'delete']);
 
 
-
+//nilaikuliah
 use App\Http\Controllers\nilaikuliahcontroller;
 
 Route::get('/nilaikuliah', [nilaikuliahcontroller::class, 'index']);
@@ -139,3 +139,37 @@ Route::get('/minuman/edit/{id}', [MinumanController::class, 'edit']);
 Route::post('/minuman/update/{id}', [MinumanController::class, 'update']);
 
 Route::get('/minuman/hapus/{id}', [MinumanController::class, 'delete']);
+
+// buku
+use App\Http\Controllers\PerpustakaanController;
+
+Route::get('/buku', [PerpustakaanController::class, 'index']);
+
+Route::get('/buku/create', [PerpustakaanController::class, 'create']);
+
+Route::post('/buku/store', [PerpustakaanController::class, 'store']);
+
+Route::get('/buku/edit/{id}', [PerpustakaanController::class, 'edit']);
+
+Route::post('/buku/update/{id}', [PerpustakaanController::class, 'update']);
+
+Route::get('/buku/hapus/{id}', [PerpustakaanController::class, 'delete']);
+
+Route::get('/buku/pinjam/{id}', [PerpustakaanController::class, 'pinjam']);
+
+// eas
+use App\Http\Controllers\NilaiPesertaController;
+
+Route::get('/eas', [NilaiPesertaController::class, 'index']);
+
+Route::get('/eas/create', [NilaiPesertaController::class, 'create']);
+
+Route::post('/eas/store', [NilaiPesertaController::class, 'store']);
+
+// Route::get('/buku/edit/{id}', [PerpustakaanController::class, 'edit']);
+
+// Route::post('/buku/update/{id}', [PerpustakaanController::class, 'update']);
+
+// Route::get('/buku/hapus/{id}', [PerpustakaanController::class, 'delete']);
+
+// Route::get('/buku/pinjam/{id}', [PerpustakaanController::class, 'pinjam']);

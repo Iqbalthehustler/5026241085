@@ -8,7 +8,7 @@
 
 <!-- isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
-@section('konten')
+@section('isi')
 
     <p>Ini Adalah Halaman Home</p>
     <p>Selamat datang !</p>

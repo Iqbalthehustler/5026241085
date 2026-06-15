@@ -8,7 +8,7 @@
 @section('title', 'BLOG : Halaman Tentang')
 <!-- isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
-@section('konten')
+@section('isi')
 
     <p>Ini Adalah Halaman Tentang</p>
     <p>
